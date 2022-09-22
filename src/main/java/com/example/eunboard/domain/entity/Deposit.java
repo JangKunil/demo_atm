@@ -22,6 +22,10 @@ public class Deposit extends BaseEntity{
     @Column(name = "password")
     private String password;
 
+    /** 이메일 */
+    @Column(name = "email")
+    private String email;
+
     /** 계좌 번호 */
     @Column(name = "account_number")
     private String accountNumber;

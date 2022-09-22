@@ -17,7 +17,7 @@ public class DummyInsertTest {
     @Test
     public void 회원_더미데이터_입력() throws Exception {
         // given
-        IntStream.rangeClosed(1, 30).forEach(i -> {
+        /*IntStream.rangeClosed(1, 30).forEach(i -> {
 
             MemberRole role = MemberRole.valueOf("P");
             if (i <= 10) {
@@ -34,7 +34,7 @@ public class DummyInsertTest {
                     .build();
 
             memberRepository.save(member);
-        });
+        });*/
 
         // when
 

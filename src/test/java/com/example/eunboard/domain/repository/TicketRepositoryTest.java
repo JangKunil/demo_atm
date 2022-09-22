@@ -8,16 +8,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 class TicketRepositoryTest {
 
     @Autowired
-    TicketRepository ticketRepository;
+    //TicketRepository ticketRepository;
 
 
     @Test
     public void 테스트() throws Exception {
         //given
-        Ticket build = Ticket.builder()
+        /*Ticket build = Ticket.builder()
                 .build();
 
-        ticketRepository.save(build);
+        ticketRepository.save(build);*/
         //when
 
         //then

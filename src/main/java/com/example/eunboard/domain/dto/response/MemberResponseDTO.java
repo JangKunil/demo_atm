@@ -6,6 +6,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import org.modelmapper.ModelMapper;
 
+import java.util.Date;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -19,20 +21,17 @@ public class MemberResponseDTO {
     @JsonIgnore
     private Long id;
 
-    private String email;
-
-    private String studentNumber;
-
     private String memberName;
-
-    private String department;
 
     private String phoneNumber;
 
+    private String email;
 
-    private String profileImage;
+    private String accountNumber;
 
-    private boolean isMember;
+    private int isRemoved;
+
+    private Date deleteDate;
 
     public static MemberResponseDTO toDTO(Member entity) {
         ModelMapper modelMapper = new ModelMapper();

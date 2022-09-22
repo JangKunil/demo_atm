@@ -30,7 +30,7 @@ public class Member extends BaseEntity{
     private String memberName;
 
     /** 연락처 */
-    @Column(name = "phone_number", length = 11)
+    @Column(name = "phone_number", length = 30)
     private String phoneNumber;
 
     /** 이메일 */
@@ -45,6 +45,9 @@ public class Member extends BaseEntity{
     @Column(name = "account_number")
     private String accountNumber;
 
+    /** 돈 */
+    @Column(name = "money")
+    private long money;
 
     /** 탈퇴여부 */
     @ColumnDefault("0")

@@ -25,7 +25,7 @@ public class SecurityConfig {
                 .httpBasic().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                .authorizeRequests().antMatchers("/kakaoLogin") // 카카오로그인만 접근허용되어있음
+                .authorizeRequests().antMatchers("/**") // 일단 모든 API 접근 허용
                 .permitAll()
                 .anyRequest().authenticated();
 
